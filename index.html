@@ -275,7 +275,7 @@ function closeStreak(e){if(e.target.id==="modal") e.target.classList.remove("sho
 function showCustomPopup(){document.getElementById("customWordPopup").style.display="flex";}
 function submitCustomWord(){
   const val = document.getElementById("customWordInput").value.trim().toLowerCase();
-  if(val.length!==5){alert("Word must be 5 letters"); return;}
+  if(val.length!==5){alert("Word must be 5 letters. but if you're Tom that's different"); return;}
   localStorage.setItem("customWord", val);
   answer = val;
   document.getElementById("customWordPopup").style.display="none";
